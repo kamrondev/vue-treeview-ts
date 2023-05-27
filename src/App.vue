@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import TreeView from './components/TreeView.vue'
-import LogoIcon from './components/icons/LogoIcon.vue'
 
 export interface TreeViewItem {
 	id: number
@@ -49,7 +48,6 @@ const treeViewItems = ref<TreeViewItem[]>([
 
 <template>
 	<div class="w-full min-h-screen bg-back flex flex-col items-center pt-12">
-		<LogoIcon class="w-48 h-48" />
 		<div class="w-[480px] px-6 py-4">
 			<TreeView :items="treeViewItems" />
 		</div>
